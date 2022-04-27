@@ -60,6 +60,6 @@ jobs:
       - name: Login to Heroku
         run: heroku container:login
       - name: Push Docker Container
-        run: heroku container:push web -a shopping-list-app
+        run: heroku container:push web -a shopping-list-ms
       - name: Release Docker Container
-        run: heroku container:release web -a shopping-list-app
+        run: heroku container:release web -a shopping-list-ms
